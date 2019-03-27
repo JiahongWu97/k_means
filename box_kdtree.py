@@ -150,7 +150,7 @@ def cell_kdtree_2(data, depth=0, bucket_size=3):
                      )
     else:
         return Wiki_Leaf(data)
-#我操死你妈的，numoy的array 指针（变量名）作为行参，要copy一下。
+#numoy的array 指针（变量名）作为行参，要copy一下。
 def cell_kdtree_3(data, a, mi=None, ma=None, depth=0, root=None, left=True, bucketsize = 1):
     row, col = shape(data)
     axis = depth % col
